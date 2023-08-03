@@ -1,0 +1,50 @@
+.movieDetails {
+  text-align: center;
+  margin: 20px;
+}
+
+.movieDetails h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movieDetails img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.movieDetails p {
+  margin-bottom: 10px;
+}
+
+.movieDetails .details-label {
+  font-weight: bold;
+}
+
+.movieDetails .details-value {
+  font-style: italic;
+}
+
+.movieDetails .details-genres {
+  margin-top: 10px;
+}
+
+.movieDetails .details-genres:before {
+  content: 'Genres: ';
+  font-weight: bold;
+}
+
+.movieDetails .details-genres span:not(:last-child)::after {
+  content: ', ';
+}
+
+.movieDetails .details-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.movieDetails .details-link:hover {
+  color: red;
+}

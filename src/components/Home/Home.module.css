@@ -1,0 +1,45 @@
+.home {
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.movieList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 0;
+}
+
+.movieList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieList li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.movieList li a:hover {
+  color: #555;
+}
+
+.movieList li img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movieList li span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,66 @@
+.cast {
+  margin-top: 20px;
+}
+
+.cast h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cast ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cast li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cast li img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cast li p {
+  margin: 0;
+}
+
+.cast li p.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.cast li p.character {
+  color: #666;
+  font-size: 14px;
+}
+
+.cast li p.role {
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
+}
+
+.cast li .social-links {
+  margin-top: 5px;
+}
+
+.cast li .social-links a {
+  display: inline-block;
+  color: #333;
+  margin-right: 5px;
+  transition: color 0.3s ease;
+}
+
+.cast li .social-links a:hover {
+  color: #ff4081;
+}

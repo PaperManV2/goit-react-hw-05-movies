@@ -1,0 +1,93 @@
+.reviews {
+  margin-top: 20px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reviews p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.reviews ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reviews li {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reviews li:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.reviews li p {
+  margin: 0;
+}
+
+.reviews li p.author {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.reviews li p.content {
+  color: #555;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.reviews li p.content::before {
+  content: 'Treść: ';
+  font-weight: bold;
+}
+
+.reviews .no-reviews {
+  color: #777;
+  font-style: italic;
+}
+
+.reviews .no-reviews::before {
+  content: 'Brak recenzji do wyświetlenia.';
+}
+
+.reviews .no-reviews::after {
+  content: ' 😞';
+}
+
+.reviews li .like-button {
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.reviews li .like-button:hover {
+  color: #f00;
+}
+
+.reviews li .like-button .heart-icon {
+  margin-right: 5px;
+}
+
+.reviews li .like-count {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #888;
+}
