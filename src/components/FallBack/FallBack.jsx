@@ -20,7 +20,7 @@ const GoBackButton = () => {
   }
 
   return (
-    <button classname={styles.fallback} onClick={handleGoBack}>
+    <button className={styles.fallback} onClick={handleGoBack}>
       Back
     </button>
   );

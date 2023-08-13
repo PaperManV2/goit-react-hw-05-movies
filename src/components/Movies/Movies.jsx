@@ -15,6 +15,7 @@ const Movies = () => {
     e.preventDefault();
     try {
       const response = await searchMovies(query);
+      console.log(response);
       setMovies(response.results);
     } catch (error) {
       console.log(error);
@@ -37,7 +38,10 @@ const Movies = () => {
           <li key={movie.id}>
             <Link to={`/movies/${movie.id}`}>
               <div className={styles['movie-card']}>
-                <img src={movie.poster} alt={movie.title} />
+                <img
+                  src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+                  alt={movie.title}
+                />
                 <div className={styles['movie-details']}>
                   <h3>{movie.title}</h3>
                   <p>Release Date: {movie.releaseDate}</p>
